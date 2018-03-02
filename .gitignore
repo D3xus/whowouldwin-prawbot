@@ -1,0 +1,6 @@
+config.ini
+test.py
+node_modules
+.DS_Store
+.vscode
+__pycache__

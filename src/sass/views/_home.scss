@@ -1,0 +1,101 @@
+body {
+  color: #FFFFFF;
+  min-height: 100vh;
+  background-image: -moz-linear-gradient(top, #151515 0%, #283143 100%);
+  background-image: -webkit-linear-gradient(top, #151515 0%, #283143 100%);
+  background-image: linear-gradient(to bottom, #151515 0%, #283143 100%);
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+$speed : 5000ms;
+
+h1 {
+  margin-top: .75rem;
+}
+h1, h2 {
+  display: block;
+  clear: none;
+  margin-left: 6rem;
+}
+
+header {
+  display: block;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0 1rem 1rem;
+  border-bottom: 3px solid #FFFFFF;
+
+  img.spinlogo {
+    display: block;
+    height: 5rem;
+    float: left;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: $speed;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: $speed;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: $speed;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: $speed;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotateY(0deg); }
+    to { -ms-transform: rotateY(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotateY(0deg); }
+    to { -moz-transform: rotateY(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+section {
+  margin: 1rem;
+}
+
+ul.flair-list {
+  li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    float: left;
+  }
+  a {
+    display: block;
+    height: 45px;
+    width: 45px;
+    transition: background-color 2s, box-shadow .1s;
+    &:hover {
+      background-color: $www-blue;
+      box-shadow: 0px 0px 15px $www-gold;
+      // $www-gold
+    }
+  }
+}
