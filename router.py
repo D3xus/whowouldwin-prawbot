@@ -1,4 +1,4 @@
-from bot.flair_bot import FlairBot as FlairBot 
+from flair_bot import FlairBot as FlairBot 
 from flask import Flask, render_template
 
 # set the project root directory as the static folder, you can set others.
@@ -8,6 +8,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+print(FlairBot)
 #@app.route("/flairbot")
 #def flairbotRoute():
 #    print("hello")
