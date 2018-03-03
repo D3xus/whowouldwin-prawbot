@@ -69,6 +69,8 @@ module.exports = function(grunt) {
   });
   
   // > grunt build_reddit - compiles project for reddit's stylesheet
+  grunt.registerTask('build', ['build_reddit', 'build_site']);
+  // > grunt build_reddit - compiles project for reddit's stylesheet
   grunt.registerTask('build_reddit', ['sass:reddit']);
   // > grunt build_site  - compiles project for the reddit chooser
   grunt.registerTask('build_site', ['sass:site', 'sync']);    
