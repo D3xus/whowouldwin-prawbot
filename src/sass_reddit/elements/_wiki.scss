@@ -1,0 +1,154 @@
+/*====== WikiBar Rework!==== */
+
+.side h4:nth-of-type(1) {
+  z-index:-9000;
+  position:absolute;
+  top: 118px;
+  display: block;
+  color: transparent !important;
+  text-align: left;
+  border-bottom: 3px solid;
+  width: 100%;
+  left: 0%;
+  background: url(%%wikibar-sprites%%)  0 -990px no-repeat  transparent;
+  height: 40px;
+  font-size: 1%;
+  padding: 9px 0px 9px 0px;
+}
+
+.titlebox h6 {
+  position: absolute;
+  top:118px;
+  right: 0px;
+  left: 15px;
+  z-index: 97;
+}
+
+.titlebox h6 a {
+  position: absolute;
+  height: 40px;
+  text-indent: -9999px;
+  margin: 0;
+  top: -8px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/welcome"] {
+  width: 150px;
+  left: 150px;
+  background: url(%%wikibar-sprites%%);
+  background-position: 0 -810px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/welcome"]:hover {
+  background-position: -2px -809px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/rules"] {
+  width: 110px;
+  left: 270px;
+  background-image: url(%%wikibar-sprites%%);
+  background-position: 0 -720px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/rules"]:hover {
+  background-position: -2px -719px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/megameta"] {
+  width: 120px;
+  left: 375px;
+  background-image: url(%%wikibar-sprites%%);
+  background-position: 0 -450px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/megameta"]:hover {
+  background-position: -2px -449px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/cotwarchive"] {
+  width: 179px;
+  left: 530px;
+  background: url(%%wikibar-sprites%%) no-repeat;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/cotwarchive"]:hover {
+  background-position: -2px 1px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/speciallinks"] {
+  position: absolute;
+  height: 40px;
+  width: 180px;
+  top: -8px;
+  left: 720px;
+  margin: 0;
+  background-image: url(%%wikibar-sprites%%);
+  text-indent: -9999px;
+  background-position: 0 -90px;
+}
+
+.titlebox h6 a[href*="/r/whowouldwin/wiki/speciallinks"]:hover {
+  background-position: -2px -89px;
+}
+
+/* Wiki-Bar NM */
+
+.res-nightmode .side h4:nth-of-type(1), html:lang(NM) .side h4:nth-of-type(1){
+  background: url(%%wikibar-sprites%%) no-repeat 0 -900px transparent;
+}
+
+.res-nightmode .titlebox h6 a[href*="/r/whowouldwin/wiki/welcome"], html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/welcome"]  {
+  width: 130px;
+  left: 150px;
+  background: url(%%wikibar-sprites%%);
+  background-position: 0 -180px;
+}
+
+.res-nightmode  .titlebox h6 a[href*="/r/whowouldwin/wiki/welcome"]:hover, html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/welcome"]:hover {
+  background-position: -2px -179px;
+}
+
+.res-nightmode .titlebox h6 a[href*="/r/whowouldwin/wiki/rules"], html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/rules"] {
+  width: 180px;
+  left: 270px;
+  background: url(%%wikibar-sprites%%);
+  background-position: 0 -630px;
+}
+
+.res-nightmode  .titlebox h6 a[href*="/r/whowouldwin/wiki/rules"]:hover, html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/rules"]:hover  {
+  background-position: -2px -629px;
+}
+
+.res-nightmode .titlebox h6 a[href*="/r/whowouldwin/wiki/megameta"], html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/megameta"]  {
+  width: 110px;
+  top: -7px;
+  left: 375px;
+  background: url(%%wikibar-sprites%%);
+  background-position: 0 -540px;
+}
+
+.res-nightmode  .titlebox h6 a[href*="/r/whowouldwin/wiki/megameta"]:hover, html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/megameta"]:hover {
+  background-position: -2px -539px;
+}
+
+.res-nightmode .titlebox h6 a[href*="/r/whowouldwin/wiki/cotwarchive"], html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/cotwarchive"] {
+  width: 179px;
+  left: 530px;
+  background-position: 0 -270px;
+  background-image:url(%%wikibar-sprites%%);
+}
+
+.res-nightmode  .titlebox h6 a[href*="/r/whowouldwin/wiki/cotwarchive"]:hover, html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/cotwarchive"]:hover {
+  background-position: -2px -269px;
+}
+
+.res-nightmode .titlebox h6 a[href*="/r/whowouldwin/wiki/speciallinks"], html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/speciallinks"]  {
+  width: 130px;
+  left: 735px;
+  background-position: 0 -360px; 
+  background-image: url(%%wikibar-sprites%%);
+}
+
+.res-nightmode  .titlebox h6 a[href*="/r/whowouldwin/wiki/speciallinks"]:hover, html:lang(NM) .titlebox h6 a[href*="/r/whowouldwin/wiki/speciallinks"]:hover {
+  background-position: -2px -359px;
+}

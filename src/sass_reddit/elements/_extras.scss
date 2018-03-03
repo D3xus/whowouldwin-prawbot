@@ -1,0 +1,27 @@
+/*===Extra Shit===*/
+
+.submit-link .morelink a, .submit-text .morelink a {
+  display: block;
+  font-size: 0;
+  height: 40px;
+  width: 300px;
+  background: url(%%Sumbit%%) no-repeat;
+}
+
+.morelink .nub, .titlebox .bottom { 
+  display: none; 
+}
+
+body { 
+  position: relative; 
+  background-color: #f5f5ff;
+}
+
+.submit-page .formtabs-content .spacer:first-child {
+  margin-top: 90px;
+}
+
+.submit_text.roundfield {
+  position: absolute;
+  top: 211px;
+} 

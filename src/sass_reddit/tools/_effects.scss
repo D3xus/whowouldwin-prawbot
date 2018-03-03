@@ -1,0 +1,76 @@
+a.reddit-link-title.may-blank {
+  background: none !important;
+}
+
+a.reddit-comment-link.may-blank {
+  background: none !important;
+}
+
+.res-nightmode a.title:visited, html:lang(NM) a.title:visited { 
+  color: #C285FF !important;
+} 
+a[href="/intensifies"] {
+  color: #000000;
+  display: block;
+  font-size: 15px;
+  animation: intensify .1s steps(5) infinite;
+  -webkit-animation: intensify .1s steps(5) infinite;
+  -moz-animation: intensify .1s steps(5) infinite;
+}
+
+@keyframes intensify {
+  0%    { margin-left: 0px; }
+  100%  { margin-left: 2px; }
+}
+
+@-webkit-keyframes intensify {
+  0%    { margin-left: 0px; }
+  100%  { margin-left: 2px; }
+}
+
+@-moz-keyframes intensify {
+  0%    { margin-left: 0px; }
+  100%  { margin-left: 2px; }
+}
+
+
+a[href="/intensifies"]:before {
+  content: "[";
+}
+a[href="/intensifies"]:after {
+  content: "]";
+}
+
+/* Another one */
+a[href="/pulsate"] {
+  color: #fff;
+  background-color: #ff3296;
+  animation: pulse 1s ease infinite;
+  /* transition: transform 0.2s; */
+  -webkit-animation: pulse 1s ease infinite;
+  -moz-animation: pulse 1s ease infinite
+}
+
+@keyframes pulse {
+  0%    { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100%  { transform: scale(1); }
+}
+@-webkit-keyframes pulse {
+  0%    { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100%  { transform: scale(1); }
+}
+@-moz-keyframes pulse {
+  0%    { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100%  { transform: scale(1); }
+}
+
+a[href="/pulsate"]:before {
+  content: "[";
+}
+
+a[href="/pulsate"]:after {
+  content: "]";
+}

@@ -1,0 +1,55 @@
+/*==Rewards==*/
+
+.author:after { 
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  overflow: hidden;
+  content: "";
+}
+div[data-context="listing"] {
+  .tagline {
+    position: relative;
+  }
+  .author:after { 
+    left: 20px;
+    top: 30px;
+  }
+}
+div[data-context="comments"] {
+  .tagline {
+    position: relative;
+  }
+  .author:after { 
+    left: 50px;
+    top: 20px;
+  }
+}
+div.titlebox .author:after {
+  left: 56px;
+  top: 12px;
+}
+.sidecontentbox .content li {
+  position: relative;
+  .author:after {
+    left: 50px;
+    top: 10px;
+  } 
+}
+div.tagline {
+  position: relative;
+}
+
+@mixin assignAwards () {
+  @each $award in $awards {
+    .author[href$="/user/#{nth($award,1)}"]:after { 
+      display: block;
+      background-image: url( unquote("#{nth($award,2)}"));
+      background-position-x: unquote("#{nth($award,3)}");
+      background-position-y: unquote("#{nth($award,4)}"); 
+    }
+  }
+} 
+
+@include assignAwards();

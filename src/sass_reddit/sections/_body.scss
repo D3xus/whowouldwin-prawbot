@@ -1,0 +1,92 @@
+/* Static Stuff */
+
+.submit_text {
+  font-size: 10pt !important;
+}
+
+body .RES-keyNav-activeElement, body .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+  background-color: transparent!important;
+}
+
+div.content {
+  margin-top: 120px;
+}
+.titlebox form {
+  position: static
+}
+
+/* --------------- Body ----------------- */
+
+/* Flybar */
+
+.titlebox form {
+  position: static
+}
+
+.side h3:nth-of-type(1){
+  position:absolute;
+  top: 168px;
+  display: block;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  left: 5px;
+  right: 313px;
+  height: 16px !important;
+  padding: 5px 0px 5px 0px;
+  border-width: 1px;
+  border: 1px #FF9900 solid;
+  border-left: 1px;
+  font-size:10pt;
+  border-right: 1px;
+}
+
+/* Posts */
+
+.stickied {
+  background: #fff;
+  color: #000 !important;
+  border-left: 1px !important;
+  border-right: 1px !important;
+  border-color: #FF9900 !important;
+}
+
+.link {
+  padding: 25px 0 6px 10px;
+  border: 1px solid;
+  background: #fff;
+  margin-right: 308px;
+  position: relative;
+  border-right: 0px !important;
+  border-left: 0px !important;
+}
+
+.link .rank {
+  display: none;
+}
+
+.link .usertext .md {
+  position: relative;
+  top: 3px;
+  border-radius: 0px;
+}
+
+/*==================================================
+1/27 Layout fixes. Fuck you admins.
+================================================== */   
+
+#search > [type=submit] {
+  display: none;
+}
+
+.usertext-body {
+  font-size: 9pt !important;
+}
+
+.sr-bar {
+  font-size:7pt !important;
+}
+
+.submit-page .content h1 { 
+  display:none; 
+}

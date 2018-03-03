@@ -1,0 +1,12 @@
+// These are my standard responsive breakpoints. They're used in my custom 12 Col 'Bootstrap' style grid.
+
+// Grid
+$grid: (
+  "sm": 380px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1650px,
+  "short": 550px
+);
+
+$grid-margin: 3%;

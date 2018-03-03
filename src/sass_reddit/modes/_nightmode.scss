@@ -1,0 +1,267 @@
+/*=========NIGHT MODE============*/
+
+.res-nightmode .linkflairlabel, html:lang(NM) .linkflairlabel{
+  background-color: transparent !important;
+}
+
+.res-nightmode .side {
+  background: transparent !important;
+}
+
+/* Flybar */
+
+.res-nightmode .side h3:nth-of-type(1), html:lang(NM) .side h3:nth-of-type(1){
+  background: transparent;
+  color: #fff;
+  border-color: #bbbbbb;
+}
+
+
+.res-nightmode #search input[type=text], html:lang(NM) #search input[type=text] {
+  border-color: #BBBBBB;
+}
+
+
+.res-nightmode .stickied, html:lang(NM) .stickied {
+  color: #000000 !important;
+  border-color: #bbbbbb !important;
+}
+
+.res-nightmode .link, html:lang(NM) .link{
+  border: 1px solid;
+  background: #161616;
+  padding: 20px 0 3px 10px !important;
+}
+
+
+.res-nightmode .link .title, html:lang(NM) .link .title{
+ color: #bbb !important;
+} 
+
+.res-nightmode a.title:visited, html:lang(NM) a.title:visited,  { 
+ color: #C285FF !important;
+} 
+
+.res-nightmode .titlebox, html:lang(NM) .titlebox {
+  background:url(%%nm-sprite-sheet%%) no-repeat;
+  background-position: 0 -1095px;
+}
+
+.res-nightmode .submit-link .morelink a, html:lang(NM) .submit-link .morelink a {   
+  background:url(%%nm-sprite-sheet%%)!important;
+  background-position: 0 -815px!important; 
+}
+
+.res-nightmode .submit-text .morelink a, html:lang(NM) .submit-text .morelink a { 
+  background-image: url(%%nm-sprite-sheet%%)!important;
+  background-position: 0 -815px!important; 
+}
+
+
+.res-nightmode .tabmenu li.selected a, .res-nightmode #header .tabmenu>li>a:hover, html:lang(NM) .tabmenu li.selected a, html:lang(NM) #header .tabmenu>li>a:hover {
+  color: #bbbbbb !important;
+}
+
+
+.res-nightmode .report-button a:hover:after, html:lang(NM) .report-button a:hover:after{
+  color:#0099FF;
+}
+
+/* Submit Pop-Up */
+
+.res-nightmode .sidebox.submit:hover:before, html:lang(NM) .sidebox.submit:hover:before {
+  background: url(%%nm-sprite-sheet%%);
+  background-position: 0 -440px; 
+  color: #fff;
+}
+
+/* RES buttons */
+
+.res-nightmode .subButtons .RESshortcutside, .res-nightmode .subButtons .RESDashboardToggle, html:lang(NM) .subButtons .RESshortcutside, html:lang(NM) .subButtons .RESDashboardToggle{
+  color: #fff;
+}
+
+/* links*/
+
+.res-nightmode a:link, .res-nightmode .side a:link, html:lang(NM) a:link, html:lang(NM) .side a:link {
+  color: #0099ff;
+}
+
+/* RES menu hover*/
+.res-nightmode #header-bottom-right a:hover, html:lang(NM) #header-bottom-right a:hover { 
+  border-bottom: 1px solid #bbbbbb;                   
+} 
+
+/*Link thumbnails*/
+
+.res-nightmode .thumbnail, html:lang(NM) .thumbnail{
+  width: 60px !important; 
+  height: 70px !important;
+  background-size: 70%;
+  padding: 0 5px 0 5px !important;
+  background:url(%%nm-sprite-sheet%%) no-repeat !important;
+}
+
+.res-nightmode .thumbnail.default, .res-nightmode .thumbnail.self, html:lang(NM) .thumbnail.default, html:lang(NM) .thumbnail.self{
+  background-position: -15px -525px !important;
+}
+
+.res-nightmode .thumbnail.nsfw, html:lang(NM) .thumbnail.nsfw{
+  background-position: -16px -300px !important;
+}
+
+.res-nightmode body, html:lang(NM) body{
+  background: #212121;
+}
+
+/* NM Extras */
+
+.helplink:lang(NM) ~ .content {
+    background: transparent;
+}
+
+.titlebox:lang(NM) .leavemoderator {
+  background: transparent;
+}
+
+.titlebox:lang(NM) form.flairtoggle {
+  background: transparent;
+}
+
+.titlebox:lang(NM) form.leavecontributor-button {
+  background: transparent;
+}
+
+.linkinfo:lang(NM) { 
+  background: #393939; 
+  border: #fff !important;
+}
+
+.side:lang(NM) .spacer *{
+  color: white;
+}
+
+.commentarea:lang(NM), .res-nightmode .commentarea {
+  background: #161616;
+  color:white !important;
+}
+
+.link .usertext:lang(NM) {
+  background: #161616;
+  color: white;
+}
+
+.new-comment:lang(NM) {
+  background: #161616;
+  color:white;
+}
+
+.link:lang(NM) .last-clicked {
+  border: none;
+  background: transparent;
+}
+
+html:lang(NM) div.content{
+  background: #212121;
+  color: white;
+}
+
+.link:lang(NM) a{  
+  color: white;  
+}
+
+.comments-page:lang(NM) .comment,
+.comment:lang(NM) .comment {
+  background-color: #212121 !important;
+  color: white !important;
+}
+
+
+html:lang(NM) .link .title a:visited, res-nightmode .link .title a:visited{
+  color:#C285C2 !important;
+} 
+
+.res:not(.res-nightmode):lang(NM) .commentarea .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode):lang(NM) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background: transparent!important;
+}
+
+input:lang(NM) {
+  background: #212121!important;
+}
+
+
+.leavemoderator a{ 
+  background: transparent!important;
+}
+
+.RES-keyNav-activeElement:lang(NM) {
+  outline: none !important;
+}
+
+
+html:lang(nm) .link .usertext .md{background-color:#161616;border:1px solid white!important}
+
+html:lang(nm) .linkinfo{border:1px solid #888;background-color:#aaa;}
+
+html:lang(nm) textarea{background:#888;border:1px solid #888; color:white!important}
+
+html:lang(nm) .commentarea>.usertext>.usertext-edit>.bottom-area:before{background:#777;color:White}
+
+html:lang(nm) .usertext-body p{color:#aaa}
+
+html:lang(nm) .comment .child,.comment .showreplies{border-left:1px solid #666}
+
+html:lang(nm) button{background:#c4c4c6;border:1px solid #c2c2c2;color:white}
+
+html:lang(nm) *, .res-nightmode * {color: #c4c4c6}
+html:lang(nm) * a, .res-nightmode * a{color: #0099ff !important;}
+
+html:lang(nm), .res-nightmode * a:visited{color: #B870B8 !important;}
+
+html:lang(nm) * h1, h2, h3, h4, h5, h6{color: white;}
+
+html:lang(nm) .comment-visits-box {background: #212121; border-color: white!important}
+
+html:lang(nm) #moderation_tools .li, html:lang(nm) .sidecontentbox .content, html:lang(nm) #moderation_tools .content {background: transparent}
+
+html:lang(af) #moderation_tools a, html:lang(nm) #moderation_tools a, .res-nightmode #moderation_tools a {background:none!important;}
+
+html:lang(nm) .score {color:white!important;text-decoration:none}
+
+html:lang(nm) code, html:lang(nm) pre, .res-nightmode code, .res-nightmode pre {background: gray!important; color:white !important}
+
+html:lang(nm) #wikiactions a, html:lang(nm) #moderation_tools a,  {background: transparent !important}
+
+html:lang(nm) #searchexpando, html:lang(nm) .info-notice, html:lang(nm) #text-desc {background: #161616 !important; border-color: white!important}
+
+html:lang(nm) select {background: #161616}
+
+html:lang(nm) #page-2.NERPageMarker, html:lang(nm) #page-3.NERPageMarker, html:lang(nm) #page-4.NERPageMarker, html:lang(nm) #page-5.NERPageMarker, html:lang(nm) #page-6.NERPageMarker, html:lang(nm) #page-7.NERPageMarker, html:lang(nm) #page-8.NERPageMarker, html:lang(nm) #page-9.NERPageMarker, html:lang(nm) #page-10.NERPageMarker, html:lang(nm) #page-11.NERPageMarker {
+  width: 75%;
+  background: #161616!important;
+}
+html:lang(nm) #progressIndicator {background: #161616 !important}
+
+.res-nightmode a[href$="/spoiler"], html:lang(NM) a[href$="/spoiler"] {
+  background:#000!important;
+  color:#000!important;
+}
+.res-nightmode a[href$="/spoiler"]:hover, html:lang(NM) a[href$="/spoiler"]:hover {
+  color:#FFF!important
+}
+
+.res-nightmode a[href$="/spoiler"]::before, html:lang(NM) a[href$="/spoiler"]::before {
+  background:#FFF!important;
+  color:#000!important;
+}

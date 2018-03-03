@@ -1,0 +1,583 @@
+/* --------------- Sidebar ----------------- */
+
+.titlebox .redditname {
+  display:none;
+}
+
+/* Search Positioning */
+
+#search input[type=text] {
+  padding: 5px 0 5px 0;
+  position: absolute !important;
+  top: 175.5px !important;
+  border-color: #FF9900;
+  border-right: 0px !important;
+  border-left: 0px !important;
+}
+
+.res-nightmode #search input[type=text], .res-nightmode .search-page #search input[type=text] {
+  border-color: #BBBBBB !important;
+}
+
+.submit-link {
+  display: none !important;
+}
+
+.search-page #search input[type=text] {
+  position: absolute;
+  top: 175.5px;
+  right: 5px;
+}
+
+/* Submit Button */
+
+.sidebox.submit {
+  // position: absolute;
+  // top: 577px;
+  width: 300px;
+  height: 36px;
+  // right: 6px;
+  display: block;
+}
+
+/* submit page layout fixes */
+
+.submit-page .side > .spacer:nth-of-type(3){
+padding-top:35px;
+}
+
+.formtabs-content > .spacer:first-of-type {
+margin-top:135px!important;
+}
+
+
+/* Create Subreddit Hide */
+
+.sidebox.create {
+  display: none;
+}
+
+/* Sidebar Box */
+
+.side, .search-page .side {
+  background:transparent;
+  padding-top:440px !important;
+  z-index: 1000;
+}
+
+.submit-page .side {
+  padding-top:405px !important;
+}
+
+.sidecontentbox .content {
+  border: 1px solid;
+  border-right: 0px !important;
+  border-left: 0px !important;
+  background: #fff;
+  margin-top: 4px;
+}
+
+.titlebox {
+  border: 0px solid;
+  border-bottom: 1px solid!important;
+  background: url(%%Master-sprite-sheet%%) no-repeat ;
+  padding: 43px 4px 4px 4px;
+  background-position: 0 -930px;
+}
+
+/* Important Link Coloring and Hover */
+
+.side a:link {
+  color: #FF9900;
+}
+
+/* Log In Positioning Fix */
+
+.login-form-side {
+  border: 1px solid #ddd;
+}
+
+.login-form-side input[type=text], .login-form-side input[type=password] {
+  border: 1px solid #ddd;
+  width: 119px;
+  height: 17px;
+  margin: 5px 0px 0px 5px;
+  top: 5px;
+  padding: 5px 10px;
+}
+
+/* Report Pop-Up */
+
+.report-button{
+  position:relative
+}
+
+.report-button a:hover:after{
+  content:"Please message a moderator with details when reporting.";
+  padding:10px 3px;
+  color:#FF9900;
+  border: 0px !important;
+}
+
+/* Submit Pop-Up */
+
+.sidebox.submit:hover:before {
+  position: fixed;
+  top:0px;
+  display: block;
+  text-align: center;
+  background: url(%%Master-sprite-sheet%%) 0 -892px;
+  color: #000;
+  z-index: 999;
+  padding: 5px 0;
+  width: 100%;
+  left: 0;
+  font-size: 14px;
+  font-weight: normal;
+  content: "Please read the Rules before posting!";
+}
+
+
+.titlebox form.toggle.flairtoggle+.tagline a.flairselectbtn:after { 
+  content: " my flair"; 
+}
+
+/* Link flair notification */
+
+.flat-list.buttons .flairselectbtn { /* removes original message */
+  font-size: 0;
+  color: #FFF;
+}
+.flat-list.buttons a.flairselectbtn:before { /* no flair set message */
+  content: "Flair";
+  padding: 0 4px;
+  background-color: #FF9900;
+  font-size: 10px;
+  color: #000;
+}
+.linkflair .flat-list.buttons a.flairselectbtn:before { /* flair set message */
+  content: "Flair Has Been Set, Thanks!";
+  background: transparent;
+  font-size: 10px;
+  color: #CCC;
+}
+
+
+
+
+/* Spoiler Button (nsfw button) */
+
+.marknsfw-button,.unmarknsfw-button{
+  font-size: 0px
+}
+
+.marknsfw-button .togglebutton:after{
+  content:"spoiler";
+  font-size: 10px
+}
+
+.unmarknsfw-button .togglebutton:after{
+  content:"un-spoiler";
+  font-size: 10px
+}
+
+
+.nsfw-stamp acronym { display: none; }
+
+.nsfw-stamp:after {
+  content: 'SPOILER';
+  border: 1px solid;
+  color: #ac3939;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* RES buttons */
+
+.subButtons .RESshortcutside, .subButtons .RESDashboardToggle {
+  width: auto;
+  display: inline-block;
+  letter-spacing: 2px;
+  border: 0;
+  font-weight: normal;
+  color: #000;
+  background: none !important;
+  padding: 1px 0px 1px 0px;
+  z-index: 100;
+}
+
+.subButtons .RESshortcutside.remove, .subButtons .RESDashboardToggle.remove {
+  background-image: none !important;
+  background-image: none;
+  border-radius: 0px !important;
+}
+.titlebox .fancy-toggle-button {
+  display: inline-block;
+  margin-bottom: 0;
+  color: green;
+}
+.titlebox .fancy-toggle-button a {
+  letter-spacing: 2px;
+  background: none;
+  border: 0;
+  font-weight: normal;
+  text-align: left;
+  color: green;
+}
+.titlebox .fancy-toggle-button .remove {
+  border: none;
+  background-image: none;
+  color: red;
+}
+.titlebox .fancy-toggle-button .add {
+  border: none;
+  background-image: none;
+}
+
+
+
+
+
+/*Link thumbnails*/
+
+.thumbnail.default, .thumbnail.self{
+  background:url(%%Master-sprite-sheet%%) no-repeat !important;
+  background-position: 0px -370px !important; 
+  width: 70px !important; 
+  height: 60px !important;
+}
+
+.thumbnail.nsfw{
+  background:url(%%Master-sprite-sheet%%) no-repeat !important;
+  background-position: 0px -730px !important;
+  width: 70px !important;
+  height: 60px !important;
+}
+
+
+
+/* Spoiler Blackout Function */
+
+  a[href$="/spoiler"]{
+  background:#000!important;
+  color:#000!important;
+  border:1px solid black;
+  padding-right:1px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px
+}
+
+  a[href$="/spoiler"]:hover{
+  color:#FFF!important
+}
+
+  a[href$="/spoiler"]::before{
+  background:#FFF!important;
+  color:#000!important;
+  padding:0px 1px;
+  margin:0px;
+  margin-right:1px
+}
+
+  a[href$="/spoiler"]::before{
+  content:"Spoiler "
+}
+
+  a[href="#spoil"]{
+  display:inline-block;
+  background:lightgrey!important;
+  color:black!important;
+  cursor:text
+}
+
+  a[href="#spoil"]::after{
+  content:attr(title);
+  background:black!important;
+  color:black!important;
+  visibility:visible;
+  border-radius:3px;
+  padding:0 3px;
+  margin-left:5px
+}
+
+  a[href="#spoil"]:hover::after,a[href="#s"]:active::after{
+  color:white!important
+}
+
+/* Collapse Comment After Deletion */
+
+  form.grayed,form.grayed ~ ul.flat-list.buttons{
+  display:none
+}
+
+  p.tagline>a.expand:first-child+em:after,div.collapsed>a.expand:first-child+em:after{
+  visibility:visible;
+  font-size:x-small;
+  font-weight:bold;
+  content:"Comment Removed"
+}
+
+  p.tagline>a.expand:first-child+em,div.collapsed>a.expand:first-child+em{
+  visibility:hidden;
+  font-size:0
+}
+
+  div.collapsed>a.expand:first-child+em+time+a.expand,div.collapsed>a.expand:first-child+em+time+em+a.expand{
+  display:none
+}
+
+
+/* No Downvotes! */
+
+.arrow.down{
+  visibility:hidden;
+  display:none
+}
+
+/* Font Play */
+
+  a[href$="/highlight"]{
+  color:#e00707;
+  font-family:"monospace",
+  "courier new";
+  font-weight:bold
+}
+
+  a[href$="/DOOOOOOOOOOM"]{
+  color:#000000;
+  font-family:"Impact","Charcoal","sans-serif";
+  font-weight:normal;font-size:200%
+}
+
+  a[href$="/win"]{
+  color:#000000;
+  font-family:"Impact","Charcoal","sans-serif";
+  font-weight:normal;font-size:2000%
+}
+
+  a[href$="/S-highlight"]{
+  color:#ff0022;
+  font-family:"Impact","Charcoal","sans-serif";
+  font-weight:normal;font-size:12500%
+}
+
+  a[href$="/sarcasm"]{
+  color:#fa8072;
+  font-family:"comic sans MS",cursive,sans-serif;
+  font-weight:1100;font-size:135%
+}
+
+  a[href$="/h"]{
+  color: #ff9900;
+  font-family:"monospace",
+  "courier new";
+  font-weight:bold
+}
+
+/* Renaming Stuff */
+
+.subscribers .word, .users-online .word, div.linkinfo .upvotes span.word, div.linkinfo .downvotes span.word, .usertext.grayed .usertext-body .md, .score .word {
+  display:none
+}
+
+.subscribers .number::after{
+  content:" Combatants"
+}
+
+.users-online .number::after{
+  content:" Fighters Online"
+}
+
+  div.linkinfo .upvotes span.number:after{
+  content:" Uppercuts "
+}
+
+  div.linkinfo .downvotes span.number:after{
+  content:" Nutshots "
+}
+
+
+.usertext.grayed .usertext-body:after{
+  content:"Comment Removed"
+}
+
+  p.tagline em{
+  visibility:hidden;
+  font-size:0
+}
+
+  p.tagline em:after{
+  visibility:visible;
+  font-size:10px;
+  content:"Total Loser"
+}
+
+.score .number:before{
+  content:" Battle Ranking  ";
+  font-size:.8em
+}
+
+/* New Sidebar Graphics */
+
+.side h2:nth-of-type(1), .side h2:nth-of-type(2), .side h2:nth-of-type(3) {
+  position:relative;
+  right: 4px;
+  height: 65px;
+  width: 300px;
+  font-size: 0%;
+  margin-bottom: -20px;
+  z-index: -1000;
+}
+
+.side h2:nth-of-type(3) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: -350px -715px;
+}
+
+.side h2:nth-of-type(1) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: 0 -115px;
+}
+
+.side h2:nth-of-type(2) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: 0 -1615px;
+}
+
+.res-nightmode .side h2:nth-of-type(1), .res-nightmode .side h2:nth-of-type(2), .res-nightmode .side h2:nth-of-type(3), html:lang(NM).side h2:nth-of-type(1), html:lang(NM).side h2:nth-of-type(2), html:lang(NM).side h2:nth-of-type(3){
+  z-index: 1;
+}
+
+.res-nightmode .side h2:nth-of-type(1), html:lang(NM).side h2:nth-of-type(1) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: 0 -230px;
+}
+
+.res-nightmode .side h2:nth-of-type(2), html:lang(NM).side h2:nth-of-type(2) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: 0 -1730px;
+}
+
+.res-nightmode .side h2:nth-of-type(3), html:lang(NM).side h2:nth-of-type(3) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: 0 -345px;
+}
+
+.side:lang(AF) h2:nth-of-type(1), .side:lang(AF) h2:nth-of-type(2), .side:lang(AF) h2:nth-of-type(3){
+  z-index: 0;
+}
+
+.side:lang(AF) h2:nth-of-type(1) {
+  background: url(%%q3-pack%%) no-repeat;
+} 
+
+.side:lang(AF) h2:nth-of-type(2) {
+  background: url(%%q3-pack%%)no-repeat;
+  background-position: 0 -1500px;
+} 
+
+.side:lang(AF) h2:nth-of-type(3) {
+  background: url(%%q3-pack%%) no-repeat;
+  background-position: -350px -600px;
+} 
+
+.side h5 a {
+  display: inline-block;
+  position: relative;
+  margin-top:0px;
+  font-size: 0%;
+  padding: 3px;
+  width: 80px;
+  height: 80px;
+  border-radius: 0px;
+}
+
+.side h5 a[href*='www.reddit.com/r/whowouldwin'] {
+  left:20px;
+}
+
+/*Default*/
+
+.side h5 a[href*='www.reddit.com/r/whowouldwin'] { 
+  background: url(%%q3-pack%%) no-repeat  -350px -1130px;
+}
+
+.side h5 a[href*='nm.reddit.com/r/whowouldwin'] { 
+  background: url(%%q3-pack%%) no-repeat 0 -720px;
+  left:-70px;
+}
+
+.side h5 a[href*='af.reddit.com/r/whowouldwin'] { 
+  background:  url(%%q3-pack%%) no-repeat 0 -1110px;
+  left:105px;
+}
+
+
+.side h5 a[href*='nm.reddit.com/r/whowouldwin']:hover{
+  background: url(%%q3-pack%%) no-repeat -2px -850px !important;
+  background-position: 0 -5%;
+}
+
+.side h5 a[href*='af.reddit.com/r/whowouldwin']:hover{
+  background:  url(%%q3-pack%%) no-repeat 0 -1240px;
+}
+
+/*AF*/
+
+.side:lang(AF) a[href*='www.reddit.com/r/whowouldwin'] { 
+  background: url(%%q3-pack%%) no-repeat 0 -590px;
+}
+
+.side:lang(AF) a[href*='nm.reddit.com/r/whowouldwin'] { 
+  background: url(%%q3-pack%%)no-repeat 0px -720px;
+  left:-70px;
+}
+
+.side:lang(AF) a[href*='af.reddit.com/r/whowouldwin'] { 
+  background:  url(%%q3-pack%%) no-repeat 0 -1240px;
+  left:105px;
+}
+
+.side:lang(AF) a[href*='www.reddit.com/r/whowouldwin']:hover {
+  background: url(%%q3-pack%%) no-repeat -350px -1130px;
+}
+
+.side:lang(AF) a[href*='nm.reddit.com/r/whowouldwin']:hover {
+background: url(%%q3-pack%%) no-repeat -2px -850px !important;
+background-position: 0 -5%;
+}
+
+.side:lang(AF) a[href*='af.reddit.com/r/whowouldwin']:hover {
+  background:  url(%%q3-pack%%) no-repeat 0 -1240px;
+}
+
+/*NM*/
+
+.side:lang(NM) a[href*='www.reddit.com/r/whowouldwin'], .res-nightmode .side a[href*='www.reddit.com/r/whowouldwin'] { 
+  background: url(%%q3-pack%%) no-repeat 0 -590px;
+}
+
+.side:lang(NM) a[href*='nm.reddit.com/r/whowouldwin'], .res-nightmode .side a[href*='nm.reddit.com/r/whowouldwin'] { 
+  background: url(%%q3-pack%%)  no-repeat 0px -980px;
+  left:-70px;
+}
+
+.side:lang(NM) a[href*='#af'], .res-nightmode .side a[href*='#af'] { 
+  background:  url(%%q3-pack%%) no-repeat 0 -1110px;
+  left:105px;
+}
+
+.side:lang(NM) a[href*='www.reddit.com/r/whowouldwin']:hover, .res-nightmode .side a[href*='www.reddit.com/r/whowouldwin']:hover {
+  background:  url(%%q3-pack%%) no-repeat -350px -1260px;
+}
+
+// .side:lang(NM) a[href*='nm.reddit.com/r/whowouldwin']:hover, .res-nightmode .side a[href*='nm.reddit.com/r/whowouldwin']:hover {
+//   background: url(%%q3-pack%%)  no-repeat 0 -980px!important;
+// }
+
+.side:lang(NM) a[href*='#af']:hover, .res-nightmode .side a[href*='#af']:hover {
+  background:  url(%%q3-pack%%) no-repeat 0 -1370px;
+}
+
+

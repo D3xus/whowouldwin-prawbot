@@ -1,0 +1,171 @@
+/* AF Toggle */
+
+.titlebox:lang(AF) h6 {
+  position: absolute;
+  top:118px;
+  right: 0px;
+  left: 15px;
+  z-index: 97;
+}
+
+.titlebox:lang(AF) h6 a{
+  position: absolute;
+  height: 40px;
+  top: -8px;
+  margin: 0;
+  text-indent: -9999px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/welcome"] {
+  width: 150px;
+  left: 150px;
+  background: url(%%csg-5517353f6d414%%);
+  background-position: 0 -1653px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/welcome"]:hover {
+  background-position: -2px -1652px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/rules"] {
+  width: 110px;
+  left: 270px;
+  background-image: url(%%csg-5517353f6d414%%);
+  background-position: 0 -1253px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/rules"]:hover {
+  background-position: -2px -1252px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/megameta"] {
+  width: 120px;
+  left: 375px;
+  background-image: url(%%csg-5517353f6d414%%);
+  background-position: 0 -1025px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/megameta"]:hover {
+  background-position: -2px -1024px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/cotwarchive"] {
+  width: 179px;
+  left: 500px;
+  background: url(%%csg-5517353f6d414%%);
+  background-position: 0 -495px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/cotwarchive"]:hover {
+  background-position: -2px -494px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/speciallinks"] {
+  width: 180px;
+  left: 635px;
+  background-image: url(%%csg-5517353f6d414%%);
+  background-position: 0 -785px;
+}
+
+.titlebox:lang(AF) h6 a[href*="/r/whowouldwin/wiki/speciallinks"]:hover {
+  background-position: -2px -784px;
+}
+
+a:lang(AF):link, .side:lang(AF) a:link  {
+color: #ff9900;
+}
+
+/* Banner */
+
+#header:lang(AF) { 
+  background: url(%%AFbanner%%)bottom left;
+}
+
+.pagename:lang(AF) {
+  background-image: url(%%csg-5517353f6d414%%);
+  background-repeat: no-repeat;
+  top: 18px;
+  width: 70%;
+  height: 103px;
+  left: 20px;
+  color: #364657;
+  background-position: 0 -1065px;
+  z-index: 1;
+}
+
+.submit-link:lang(AF) .morelink a {     
+  background: url(%%csg-5517353f6d414%%) no-repeat!important;
+  background-position: 0 -275px;
+}
+
+.submit-text:lang(AF) .morelink a { 
+  background-image: url(%%csg-5517353f6d414%%)!important;
+  background-position: 0 -276px!important;
+}
+
+.titlebox:lang(AF) {
+  background: url(%%sideAF%%) no-repeat #fff;
+}
+
+/*Link thumbnails*/
+
+.thumbnail.default:lang(AF), .thumbnail.self:lang(AF){
+  background:url(%%csg-5517353f6d414%%) no-repeat !important;
+  background-position: 0 -1543px !important; 
+}
+
+.thumbnail.nsfw:lang(AF) {
+  background:url(%%csg-5517353f6d414%%) no-repeat !important;
+  background-position: 0 -1433px !important;
+}
+
+.side:lang(AF) h4:nth-of-type(1) {
+  z-index:-9000;
+  top: 78px;
+  background:url(%%csg-5517353f6d414%%) no-repeat 0 -365px;
+  height: 80px;
+  padding: 9px 0px 9px 0px;
+}
+
+/* Submit Pop-Up */
+
+.sidebox:lang(AF).submit:hover:before {
+  background: url(%%csg-5517353f6d414%%); 
+  color: #fff;
+}
+
+.thing:lang(AF)[data-fullname$="a"]>.midcol>.upmod:focus::after{content:"Ooh mui mui I love you! "}
+.thing:lang(AF)[data-fullname$="b"]>.midcol>.upmod:focus::after{content:" My forgotten, da Bosses will do terrible tings to me TERRRRRIBLE is me going back der! "}
+.thing:lang(AF)[data-fullname$="c"]>.midcol>.upmod:focus::after{content:" Hmmm... yousa point is well seen. "}
+.thing:lang(AF)[data-fullname$="d"]>.midcol>.upmod:focus::after{content:"Wesa got a grand army. That's why you no liking us meesa thinks."}
+.thing:lang(AF)[data-fullname$="e"]>.midcol>.upmod:focus::after{content:"Weesa all sinking and no power. Whena yousa thinking we are in trouble? "}
+.thing:lang(AF)[data-fullname$="f"]>.midcol>.upmod:focus::after{content:"Ye gods, whatta meesa sayin'?"}
+.thing:lang(AF)[data-fullname$="g"]>.midcol>.upmod:focus::after{content:"Mesa day startin pretty okee-day with a brisky morning munchy."}
+.thing:lang(AF)[data-fullname$="h"]>.midcol>.upmod:focus::after{content:"Yoosa should follow me now, okeeday?"}
+.thing:lang(AF)[data-fullname$="i"]>.midcol>.upmod:focus::after{content:"How wude!"}
+.thing:lang(AF)[data-fullname$="j"]>.midcol>.upmod:focus::after{content:"Hey yo, Daddy. Mesa back."}
+.thing:lang(AF)[data-fullname$="k"]>.midcol>.upmod:focus::after{content:"Yousa thinking yousa people ganna die? "}
+.thing:lang(AF)[data-fullname$="l"]>.midcol>.upmod:focus::after{content:"Mesa called Jar-Jar Binks. Mesa your humble servant. "}
+.thing:lang(AF)[data-fullname$="m"]>.midcol>.upmod:focus::after{content:"Where wesa goin?"}
+.thing:lang(AF)[data-fullname$="n"]>.midcol>.upmod:focus::after{content:"More? More did you spake?"}
+.thing:lang(AF)[data-fullname$="o"]>.midcol>.upmod:focus::after{content:"Dis is nutsen!"}
+.thing:lang(AF)[data-fullname$="p"]>.midcol>.upmod:focus::after{content:"It's a longo tello buta small part of it would be mesa... clumsy."}
+.thing:lang(AF)[data-fullname$="q"]>.midcol>.upmod:focus::after{content:"Yousa might'n be sayin dat."}
+.thing:lang(AF)[data-fullname$="r"]>.midcol>.upmod:focus::after{content:"Mesa fired?"}
+.thing:lang(AF)[data-fullname$="s"]>.midcol>.upmod:focus::after{content:"Mesa gonna show everyone how bombad mesa really is!"}
+.thing:lang(AF)[data-fullname$="t"]>.midcol>.upmod:focus::after{content:"Whosa you supposin dis belongs to?"}
+.thing:lang(AF)[data-fullname$="u"]>.midcol>.upmod:focus::after{content:"Desa rescuing is hard jobbin'"}
+.thing:lang(AF)[data-fullname$="v"]>.midcol>.upmod:focus::after{content:"Watch out for da mackaneeks! "}
+.thing:lang(AF)[data-fullname$="w"]>.midcol>.upmod:focus::after{content:"Thisa bad. Thisa very bad."}
+.thing:lang(AF)[data-fullname$="x"]>.midcol>.upmod:focus::after{content:"Whatsa wrong with yousa? Whosa spake like that? "}
+.thing:lang(AF)[data-fullname$="y"]>.midcol>.upmod:focus::after{content:" Senators. Dellow feligates..."}
+.thing:lang(AF)[data-fullname$="z"]>.midcol>.upmod:focus::after{content:"Let mesa thru. Mesa on a diplomatic mission."}
+
+#header:lang(AF) #header-img { display: none; }
+#header-img-a:lang(AF) {
+    display: inline-block;
+    height: 100px;
+    width: 110px;
+    background: url(%%csg-5517353f6d414%%);
+    background-position: 10px -865px;
+}

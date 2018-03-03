@@ -1,0 +1,179 @@
+/*======New Flair Preview: 350======== */   
+
+.flairselector .customizer {
+  display: inline-block !important;
+}
+
+.flair {
+  position:relative;
+  left: 4px;
+  margin-top:8px;
+  top:0px;
+  border-width: 0px;
+}
+
+.commentarea {
+  background: #fff;
+  width: 75.3%;
+}
+
+.link .flairselector { 
+  position: fixed !important; 
+}
+
+.title .linkflairlabel{
+  position:absolute;
+}
+
+.linkflair>.RES-keyNav-activeElement{
+  margin-right: 5px;
+}
+
+.flairselector .customizer {
+  display: inline-block !important;
+}
+
+.flair, .flair:hover {
+  border-width: 0px;
+  min-width:45px;
+  min-height:45px;
+  max-height:100px;
+  max-width:100px;
+}
+
+.flair:hover:before { 
+  position: absolute;
+  width: auto;
+  margin: 20px 90px 0;
+  font-size: 1 !important;
+  border: 1px solid;
+  padding: 0px 1px;
+  white-space: nowrap;
+}
+
+// @function createFlairArray($offset, $increment, $max) {
+//   $r : ($offset);
+//   @for $i from 1 to $max {
+//     $r: append($r, ($offset + ($increment * $i)), comma);
+//   }
+//   @return $r;
+// }
+// $flairArrayX: createFlairArray(-5px, -41, 17);
+// $flairArrayY: createFlairArray(-5px, -46, 12);
+
+@mixin setFlairImages($start, $end, $spritesheet) {
+  $x : ();
+  @for $i from $start through $end {
+    $i-padded : unquote("#{$i}");
+    @for $j from str-length($i-padded) through 3 {$i-padded : "0" + $i-padded;}
+    $x: append($x, unquote('.flair-#{$i-padded}'), comma);
+  }
+  #{$x} { background: #{$spritesheet}; } 
+}
+
+@include setFlairImages(  1,100,'url(%%flair1%%)');
+@include setFlairImages(101,200,'url(%%flair2%%)');
+@include setFlairImages(201,300,'url(%%flair3%%)');
+@include setFlairImages(301,400,'url(%%flair4%%)');
+@include setFlairImages(401,500,'url(%%flair5%%)');
+@include setFlairImages(501,600,'url(%%flair6%%)');
+@include setFlairImages(601,700,'url(%%flair7%%)');
+@include setFlairImages(701,800,'url(%%flair8%%)');
+
+@function setFlairPositionMap($xcount,$ycount,$height,$width,$xstart,$ystart){
+  $output: ();
+  @for $i from 1 through ($xcount) {
+    @for $j from 1 through ($ycount) {
+      // push to collection
+      $x: (-1px * ($i - 1) * $height) - $xstart;
+      $y: (-1px * ($j - 1) * $width)  - $ystart;
+      $output: append($output, unquote($x + ' ' + $y), comma);
+    }
+  }
+  @return $output;
+}
+
+$flair-positions: setFlairPositionMap(10,10,50,50,2,3);
+
+@mixin setFlairPositions(){
+  @for $i from 1 through length($flair-positions) {
+    $a : unquote("#{  0 + $i}");
+    $b : unquote("#{100 + $i}");
+    $c : unquote("#{200 + $i}");
+    $d : unquote("#{300 + $i}");
+    $e : unquote("#{400 + $i}");
+    $f : unquote("#{500 + $i}");
+    $g : unquote("#{600 + $i}");
+    $h : unquote("#{700 + $i}");
+    @for $j from str-length($a) through 3 {$a : "0" + $a;}
+    @for $j from str-length($b) through 3 {$b : "0" + $b;}
+    @for $j from str-length($c) through 3 {$c : "0" + $c;}
+    @for $j from str-length($d) through 3 {$d : "0" + $d;}
+    @for $j from str-length($e) through 3 {$e : "0" + $e;}
+    @for $j from str-length($f) through 3 {$f : "0" + $f;}
+    @for $j from str-length($g) through 3 {$g : "0" + $g;}
+    @for $j from str-length($h) through 3 {$h : "0" + $h;}
+    .flair-#{$a},.flair-#{$b},.flair-#{$c},.flair-#{$d},.flair-#{$e},.flair-#{$f},.flair-#{$g},.flair-#{$h} { background-position: nth($flair-positions, $i)}
+  }
+}
+
+@include setFlairPositions();
+
+@mixin createCustomFlairSet ($sheet, $w, $h) {
+  $r : ();
+  @each $flair in $custom-flairs {
+    @if unquote("#{nth($flair,2)}") == unquote($sheet) {
+      $r: append($r, unquote('.flair-#{nth($flair,1)}'), comma);
+    }
+  }
+  #{$r} {
+    background-image: url($sheet); 
+    width: $w; 
+    height: $h;
+    @if $sheet == "%%Customs%%" {
+      background-color: transparent !important;
+    }
+  }
+}
+@include createCustomFlairSet ("%%Customs%%", 90px, 52px);
+// @include createCustomFlairSet ("%%spritesheet1%%", 31px, 46px);
+// @include createCustomFlairSet ("%%spritesheet2%%", 31px, 46px);
+
+@mixin createCustomFlairPositions () {
+  @each $flair in $custom-flairs {
+    .flair-#{nth($flair,1)}{ background-position: unquote('#{nth($flair,3)}'); }
+  }
+} 
+
+@include createCustomFlairPositions();
+
+@mixin createCustomFlairQuotes() {
+  @each $flair in $custom-flairs {
+    @if quote("#{nth($flair,4)}") != "" {
+      .flair-#{nth($flair,1)}:hover:before { content: quote(unquote("#{nth($flair,4)}")); } 
+    }
+  }
+} 
+
+@include createCustomFlairQuotes();
+
+@mixin createCustomColors() {
+  @each $color in $custom-colors {
+    .author[href$="#{nth($color, 1)}"] {color: #{nth($color, 2)}; font-weight:bold; font-size:135%; }
+  }
+}
+
+@include createCustomColors();
+
+
+/* unbolding nkonrad inline */
+.author[href$="nkonrad"] {
+  font-weight: normal;
+  color: #369;
+  font-size: 100%;
+}
+.sidecontentbox .author[href$="nkonrad"] {
+  font-weight: bold;  
+  color: #FF9900;
+  font-size: 135%;
+}

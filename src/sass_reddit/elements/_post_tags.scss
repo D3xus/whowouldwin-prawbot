@@ -1,0 +1,124 @@
+/*======Post Tags=====*/
+
+.link.thing .flairselector {
+  left: 100px !important;
+  top: 100px !important;
+  background: #fff;
+  width: 215px !important;
+  overflow: hidden;
+}
+
+.flairselector.drop-choices.active {
+  z-index: 500;
+}
+
+.flairselector.drop-choices {
+  z-index: 9998 !important;
+}
+
+.flairselector h2 {
+  background: none !important;
+}
+
+.link .flair,.entry .tagline .flair {
+  background-color: transparent;
+}
+
+.link .flair{
+  float:left;
+}
+
+.link .flair:hover:before {
+  margin:33px!important;
+  margin-left:92px!important;
+}
+
+.link.thing.flairselector.link{
+  display:none;
+}
+
+.flairoptionpane li {
+  width: auto!important;
+  max-width: none;
+}
+
+.flairoptionpane {
+  z-index:9999;
+}
+
+.flairselector ul {
+  display: inline-block;
+  float: none!important;
+  vertical-align: top;
+  min-width: 200px;
+}
+
+.linkflair .linkflairlabel{ 
+  background-repeat: no-repeat;
+  height: 25px;
+  background-image: url(%%q3-pack%%);
+  background-position: 9000px, 9000px;
+  border-radius: 0px !important;
+  right:-9px;
+  min-width:215px;
+  top: 0px;
+  background-color: transparent;
+  color: transparent !important;
+  border: none;
+  font-size: 1%;
+}
+
+.flairsample-left > .linkflair-Meta {display:none;}
+.moderator .flairsample-left > .linkflair-Meta {display:block!important;}
+
+.flairsample-left > .linkflair-Discussion {display:none;}
+.moderator .flairsample-left > .linkflair-Discussion {display:block!important;}
+
+
+.linkflair-Casual .linkflairlabel, html:lang(AF) .linkflair-Casual .linkflairlabel, .linkflair.linkflair-Casual > .linkflairlabel { 
+  background-position: -350px -980px;
+}
+
+.linkflair-Serious .linkflairlabel, html:lang(AF) .linkflair-Serious .linkflairlabel, .linkflair.linkflair-Serious > .linkflairlabel { 
+  background-position: -350px -150px;
+}
+
+.linkflair-WritingPrompt .linkflairlabel, html:lang(AF) .linkflair-WritingPrompt .linkflairlabel, .linkflair.linkflair-WritingPrompt > .linkflairlabel { 
+  background-position: -350px -300px;
+}
+
+.linkflair-Special .linkflairlabel, html:lang(AF) .linkflair-Special .linkflairlabel, .linkflair.linkflair-Special > .linkflairlabel { 
+  background-position: -350px -450px;
+}
+
+.linkflair-Discussion .linkflairlabel, html:lang(AF) .linkflair-Discussion .linkflairlabel, .linkflair.linkflair-Discussion > .linkflairlabel { 
+  background-position: -350px 0;
+}
+
+.linkflair-Meta .linkflairlabel, html:lang(AF) .linkflair-Meta .linkflairlabel, .linkflair.linkflair-Meta > .linkflairlabel { 
+  background-position: -350px -830px;
+}
+
+.res-nightmode .linkflair-Casual .linkflairlabel, html:lang(NM) .linkflair-Casual>.linkflairlabel { 
+  background-position: -350px -1055px;
+}
+
+.res-nightmode .linkflair-Serious .linkflairlabel, html:lang(NM) .linkflair-Serious>.linkflairlabel { 
+  background-position: -350px -225px;
+}
+
+.res-nightmode .linkflair-WritingPrompt .linkflairlabel, html:lang(NM) .linkflair-WritingPrompt>.linkflairlabel { 
+  background-position: -350px -375px;
+}
+
+.res-nightmode .linkflair-Special .linkflairlabel, html:lang(NM) .linkflair-Special>.linkflairlabel { 
+  background-position: -350px -525px;
+}
+
+.res-nightmode .linkflair-Discussion.linkflairlabel, html:lang(NM) .linkflair-Discussion>.linkflairlabel { 
+  background-position: -350px -75px;
+}
+
+.res-nightmode .linkflair-Meta .linkflairlabel, html:lang(NM) .linkflair-Meta>.linkflairlabel  { 
+  background-position: -350px -905px;
+}

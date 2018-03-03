@@ -1,0 +1,113 @@
+
+// In this file, we will set values that will change often, like monthly features.
+
+$custom-colors: (
+  ("mack0409",        "#05dd05"),
+  ("Roflmoo",         "#990099"),
+  ("FatKidNoFriends", "#000000"),
+  ("Krillin",         "#FF0000"),
+  ("WWWMod",          "#00FF00"),
+  ("Etrae",           "#ff9900"),
+  ("rph39",           "#0099ff"),
+  ("CountAardvark",   "#E6C12E"),
+  ("RageExTwo",       "#000099"),
+  ("KiwiArms",        "#ff80aa"),
+  ("IronOhki",        "#009900"),
+  ("nkonrad",         "#FF9900"),
+  ("Sophophilic",     "#030730"),
+  ("PhoenixZero14",   "#FF0000"),
+  ("Verlux",          "#FF0000")
+);
+
+$custom-flairs: (
+//("css name",         "sprite sheet",     "sprite position",  "popup text")  
+  ("RAGEEX",           "%%Customs%%",      "  -5px    -3px",   "Job Description: ..."),
+  ("gecko",            "%%Customs%%",      "  -5px   -59px",   "Don't give up until the end!"),
+  ("kon",              "%%Customs%%",      "  -5px  -121px",   "Eh?"),
+  ("mack",             "%%Customs%%",      "  -5px  -183px",   "The Dozing Mod"),
+  ("Doom",             "%%Customs%%",      "  -5px  -245px",   "The New Doom, same as the old Doom."),
+  ("stalin",           "%%Customs%%",      "  -5px  -300px",   "SKREEEEOOONK"),
+  ("Etrae",            "%%Customs%%",      "  -5px  -361px",   null),
+  ("walri",            "%%Customs%%",      "  -5px  -423px",   "I'm going to 'fix' this spaghetti!"),
+  ("moo",              "%%Customs%%",      "  -5px  -485px",   "King of Games"),
+  ("krillin",          "%%Customs%%",      "  -5px  -547px",   "Big and Moist."),
+  ("rph",              "%%Customs%%",      "  -5px  -603px",   "Rolling Pin Head"),
+  ("kiwi",             "%%Customs%%",      "  -5px  -671px",   "Dragonzord!"),
+  ("SZ",               "%%Customs%%",      "  -5px  -733px",   null),
+  ("self",             "%%Customs%%",      "  -5px  -795px",   "I'm a traveler."),
+  ("fknf",             "%%Customs%%",      "  -5px  -857px",   "Avatar State Yip Yip!"),
+  ("Vision",           "%%Customs%%",      "  -5px  -919px",   "Hello, organic children of the planet Earth."),
+  ("Boxer",            "%%Customs%%",      "  -5px  -981px",   "Resident Kirby Aficionado"),
+  ("reg",              "%%Customs%%",      "  -5px -1037px",   "'I don't have a quote, I'm too busy shilling Worm' - Regvlas"),
+  ("celo",             "%%Customs%%",      "  -5px -1092px",   "Will it Scramble?"),
+  ("LetterSequence",   "%%Customs%%",      "  -5px -1152px",   "BWAHAHA"),
+  ("soph",             "%%Customs%%",      "  -5px -1214px",   "I am by far the faster"),
+  ("iron",             "%%Customs%%",      "  -5px -1276px",   "The Dragon of the West"),
+  ("knee",             "%%Customs%%",      "  -5px -1338px",   "License to kill"),
+  ("monthly1",         "%%Customs%%",      "  -5px -1400px",   null),
+  ("verl",             "%%Customs%%",      "  -5px -1462px",   "You will regret ever granting me this power."),
+  ("clev",             "%%Customs%%",      "  -5px -1524px",   "Produce respect threads, acquire females."),
+  ("monthly2",         "%%Customs%%",      "  -5px -1586px",   null),
+  ("kirbin24",         "%%Customs%%",      "  -5px -1648px",   "Rei is best girl."),
+  ("guyvin",           "%%Customs%%",      "  -5px -1700px",   "Achtung, baby!"),
+  ("xavion",           "%%Customs%%",      "  -5px -1771px",   "Coming Soon..."),
+  ("d3xus",            "%%Customs%%",      "  -5px -1833px",   "If you have a dream, don't wait. Act.")
+);
+
+//The first 10 upquotes are reserved for contest winners. Most recent is "ok" 
+$upquotes: (
+  "FUCKING LISTEN TO DAFT PUNK AND READ MANGA WHILE TRIPPING HOLY SHIT BRUH TRY THIS SOMETIME",
+  "Embrace the Dark, you call a home",
+  "ok",
+  "You see, true beauty...is control.",
+  "You can't lock up the darkness.",
+  "Very Clean.",
+  "Hey there cat tunnel planet!",
+  "The door's open, let's go.",
+  "Opposite of pork is salmon! A pig lives lazily, but salmon opposes the river's current and conquers it!",
+  "Epic_Cheese135 waz ere",
+  "Space, it's huge. So huge in fact, that if you lost your car keys in it, they would be almost impossible to find.",
+  "Time is money. Quit wasting both.",
+  "Not a promise, not an oath, or a malediction or a curse.",
+  "You should not.",
+  "I'm sorry, driving into the canal was a terrible decision!",
+  "Wanna see what destruction looks like? Here it is in human form -- it's your boy Guzma!  ",
+  "The nearly infinite power within this life-form is astounding.",
+  "Nothing ends, Adrian. Nothing ever ends.",
+  "Now... my power is without rival.",
+  "It feels great to destroy the environment!",
+  "OK. -> 3... 2... 1... GO! ->",
+  'Gun Gun Leon, Gunleon',
+  "I don't know everything, I just know what I know.",
+  "The Hintster's movin' on up!",
+  "We don't fight for justice. We fight for human freedom.",
+  "Jarvelous!",
+  "Visit /r/respectthreads",
+  "Skadoosh!",
+  "I am the ultimate life form!",
+  "Infertile posts will not bring forth splendid upvotes.",
+  "The ending of the words is ALMSIVI.'",
+  "+5 Charisma",
+  "One batch, two batch, penny and dime.",
+  "Your next line is, 'What was that upquote from?' ",
+  "Talent is something you make bloom. Instinct is something you polish!",
+  "Noble Haltmann, we adore him!"
+);
+
+// Set users' award icons.
+$awards: (
+//("username",     "award sprite", "left offset", "top offset"), 
+  // ("nkonrad",      "%%awards1%%",  "-120px",      "-5px"),
+  // ("rph39",        "%%awards1%%",  "-82px",       "-5px"),
+  // ("KiwiArms",     "%%awards1%%",  "-46px",       "-5px"),
+  // ("IronOhki",     "%%awards1%%",  "-8px",        "-5px")
+);
+
+// left offset values
+// -8px   = classic
+// -46px  = bronze
+// -82px  = silver
+// -120px = gold
+
+
+

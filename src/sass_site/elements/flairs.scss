@@ -3,21 +3,21 @@
 @mixin setFlairImages($start, $end, $spritesheet) {
   $x : ();
   @for $i from $start through $end {
-    $i-padded : #{$i};
+    $i-padded : "#{$i}";
     @for $j from str-length($i-padded) through 3 {$i-padded : "0" + $i-padded;}
     $x: append($x, unquote('.flair-#{$i-padded}'), comma);
   }
   #{$x} { background-image: #{$spritesheet}; } 
 }
 
-@include setFlairImages(  1,100,'url(/static/img/flair1.png)');
-@include setFlairImages(101,200,'url(/static/img/flair2.png)');
-@include setFlairImages(201,300,'url(/static/img/flair3.png)');
-@include setFlairImages(301,400,'url(/static/img/flair4.png)');
-@include setFlairImages(401,500,'url(/static/img/flair5.png)');
-@include setFlairImages(501,600,'url(/static/img/flair6.png)');
-@include setFlairImages(601,700,'url(/static/img/flair7.png)');
-@include setFlairImages(701,800,'url(/static/img/flair8.png)');
+@include setFlairImages(  1,100,'url("/static/img/flair1.png")');
+@include setFlairImages(101,200,'url("/static/img/flair2.png")');
+@include setFlairImages(201,300,'url("/static/img/flair3.png")');
+@include setFlairImages(301,400,'url("/static/img/flair4.png")');
+@include setFlairImages(401,500,'url("/static/img/flair5.png")');
+@include setFlairImages(501,600,'url("/static/img/flair6.png")');
+@include setFlairImages(601,700,'url("/static/img/flair7.png")');
+@include setFlairImages(701,800,'url("/static/img/flair8.png")');
 
 @function setFlairPositionMap($xcount,$ycount,$height,$width,$xstart,$ystart){
   $output: ();
@@ -34,16 +34,16 @@
 
 $flair-positions: setFlairPositionMap(10,10,50,50,2,3);
 
-@mixin setFlairPositions(){
+@mixin setFlairPositions() {
   @for $i from 1 through length($flair-positions) {
-    $a : #{  0 + $i};
-    $b : #{100 + $i};
-    $c : #{200 + $i};
-    $d : #{300 + $i};
-    $e : #{400 + $i};
-    $f : #{500 + $i};
-    $g : #{600 + $i};
-    $h : #{700 + $i};
+    $a : "#{  0 + $i}";
+    $b : "#{100 + $i}";
+    $c : "#{200 + $i}";
+    $d : "#{300 + $i}";
+    $e : "#{400 + $i}";
+    $f : "#{500 + $i}";
+    $g : "#{600 + $i}";
+    $h : "#{700 + $i}";
     @for $j from str-length($a) through 3 {$a : "0" + $a;}
     @for $j from str-length($b) through 3 {$b : "0" + $b;}
     @for $j from str-length($c) through 3 {$c : "0" + $c;}
@@ -52,7 +52,9 @@ $flair-positions: setFlairPositionMap(10,10,50,50,2,3);
     @for $j from str-length($f) through 3 {$f : "0" + $f;}
     @for $j from str-length($g) through 3 {$g : "0" + $g;}
     @for $j from str-length($h) through 3 {$h : "0" + $h;}
-    .flair-#{$a},.flair-#{$b},.flair-#{$c},.flair-#{$d},.flair-#{$e},.flair-#{$f},.flair-#{$g},.flair-#{$h} { background-position: nth($flair-positions, $i)}
+    .flair-#{$a},.flair-#{$b},.flair-#{$c},.flair-#{$d},.flair-#{$e},.flair-#{$f},.flair-#{$g},.flair-#{$h} { 
+      background-position: nth($flair-positions, $i)
+    }
   }
 }
 

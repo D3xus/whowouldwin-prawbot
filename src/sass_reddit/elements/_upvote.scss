@@ -1,0 +1,71 @@
+/* This is the cute text that pops up when you upvote */
+
+.midcol{
+  width:30px!important;
+}
+
+.thing .upmod:focus::after {
+  content:"";
+  font-size:14px;
+  margin-left:1px;
+  position:relative;
+  background: #fff;
+  color:#f90;
+  bottom:18px;
+  opacity:0.0;
+  -webkit-animation-name:dcupmod;
+  -moz-animation-name:dcupmod;
+  -webkit-animation-duration:4.0s;
+  -moz-animation-duration:4.0s;
+  -webkit-animation-timing-function:ease-out;
+  -moz-animation-timing-function:ease-out;
+  -webkit-animation-iteration-count:1;
+  -moz-animation-iteration-count:1;
+  animation-name:dcupmod;
+  animation-duration:4.0s;
+  animation-timing-function:ease-out;
+  animation-iteration-count:1;
+  animation-play-state:running;
+  z-index:9000;
+}
+
+@-webkit-keyframes dcupmod{
+  0%    {color:#f90;}
+  8%    {bottom:23px;opacity:1.0;}
+  15%   {bottom:28px;}
+  30%   {color:#f90;}
+  50%   {color:red;bottom:33px;}
+  60%   {color:#f90;}
+  100%  {bottom:38px;opacity:0.0;}
+}
+
+@-moz-keyframes dcupmod{
+  0%    {color:#f90;}
+  8%    {bottom:23px;opacity:1.0;}
+  15%   {bottom:28px;}
+  30%   {color:#f90;}
+  50%   {color:#f90;bottom:33px;}
+  60%   {color:#f90;}
+  100%  {bottom:38px;opacity:0.0;}
+}
+
+@keyframes dcupmod{
+  0%    {color:#f90;}
+  8%    {bottom:23px;opacity:1.0;}
+  15%   {bottom:28px;}
+  30%   {color:#f90;}
+  50%   {color:#f90;bottom:33px;}
+  60%   {color:#f90;}
+  100%  {bottom:38px;opacity:0.0;}
+}
+
+$upquote_id : ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0",);
+
+@for $i from 1 to 37 {
+  .thing[data-fullname$="#{nth($upquote_id, $i)}"]>.midcol>.upmod:focus::after{content:"#{nth($upquotes, $i)}";}
+}
+
+.thing .upmod:focus:after{white-space:nowrap}
+.midcol,.last-clicked.midcol{overflow:visible!important}
+.midcol,.last-clicked.midcol{overflow:visible!important}
+.res-commentBoxes .commentarea .comment{overflow:visible!important}
