@@ -6,7 +6,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    # 750 = Number of possible flairs + 1
+    listOfFlairNums = [format(x, "04d") for x in range(1, 750)]
+    return render_template("index.html", flairlist=listOfFlairNums)
 
 #@app.route("/flairbot")
 #def flairbotRoute():
